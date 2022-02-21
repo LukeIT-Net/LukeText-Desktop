@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="18.6.1" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="19.1" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_CURRENT_YEAR" Value="2021" ValueLocId="-"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json" Value="..\LukeText For Desktop\bin\Release\net5.0-windows\publish"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1" Value="..\LukeText For Desktop\bin\Release\net5.0-windows\publish"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe" Value="..\LukeText For Desktop\bin\Release\net5.0-windows\publish"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="..\LukeText For Desktop\bin\Release\net5.0-windows\publish"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_CORE_VERSION"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json" Value="LukeText For Desktop.deps.json"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1" Value="LukeText For Desktop.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Value="LukeText For Desktop.exe"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="LukeText For Desktop.runtimeconfig.json"/>
+    <ROW Property="AI_REQUIRED_DOTNET_CORE_DISPLAY" MultiBuildValue="DefaultBuild:6.0" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_CORE_VERSION" MultiBuildValue="DefaultBuild:6.0" ValueLocId="-"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="LukeIT"/>
-    <ROW Property="ProductCode" Value="1033:{7AF9F37F-9208-40DF-966F-06C1512650DA} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{56F84FD7-7BFA-4B87-931C-DE5CB434063C} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="LukeText"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="ProductVersion" Value="1.2.0" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{0B096407-AC43-4EC4-A0C9-C12F0F74374A}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -64,6 +68,9 @@
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
   </COMPONENT>
@@ -79,6 +86,7 @@
     <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
     <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
     <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
     <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
     <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
     <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
@@ -86,6 +94,7 @@
     <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
@@ -117,9 +126,11 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#LukeTextForDesktop.exe]"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
@@ -145,12 +156,14 @@
     <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 600) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 600) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
@@ -158,6 +171,7 @@
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_CORE_VERSION &gt;= AI_REQUIRED_DOTNET_CORE_VERSION" Description="[ProductName] cannot be installed on systems with .NET Core version lower than [AI_REQUIRED_DOTNET_CORE_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNETCore" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
@@ -165,7 +179,7 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="AI_PROPPATH_FILENAME_PERBUILD_LukeT" Directory_="DesktopFolder" Name="LUKETE~1.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe]" Component_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Target="[#LukeTextForDesktop.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" IconIndex="0" ShowCmd="1" WkDir="LukeTextForDesktop_Dir"/>
+    <ROW Shortcut="AI_PROPPATH_FILENAME_PERBUILD_LukeT" Directory_="DesktopFolder" Name="LukeText" Component_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Target="[#LukeTextForDesktop.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" IconIndex="0" ShowCmd="1" WkDir="LukeTextForDesktop_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>

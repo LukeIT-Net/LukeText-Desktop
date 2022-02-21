@@ -66,6 +66,8 @@
     <AppInstallerUri>file:///D:/Coding/Projects/VS2019/LukeText For Desktop/LukeText UWP Setup/bin/Packages</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+    <AppxPackageSigningTimestampServerUrl>http://timestamp.digicert.com</AppxPackageSigningTimestampServerUrl>
+    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeText UWP Setup\AppPackages\SideLoading\</AppxPackageDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AppxBundle>Always</AppxBundle>
