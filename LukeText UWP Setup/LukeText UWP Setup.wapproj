@@ -56,7 +56,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <NoWarn>$(NoWarn);NU1702</NoWarn>
-    <PackageCertificateThumbprint>8AD44B161D7D558D1183F3F19B17445577C9F8CF</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>235062913008C3D1FCAC35C86E162DDF151BB7D3</PackageCertificateThumbprint>
     <EntryPointProjectUniqueName>..\LukeText For Desktop\LukeText For Desktop.csproj</EntryPointProjectUniqueName>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>

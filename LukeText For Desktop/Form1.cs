@@ -330,5 +330,10 @@ namespace LukeText_For_Desktop
 		{
 			richTextBox1.SelectionColor = Color.Fuchsia;
 		}
+
+		private void goldToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			richTextBox1.SelectionColor = Color.Gold;
+		}
 	}
 }
