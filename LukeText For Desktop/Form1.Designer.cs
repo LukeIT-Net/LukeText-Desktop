@@ -94,6 +94,7 @@ namespace LukeText_For_Desktop
 			this.boldToolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
 			this.normalToolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
 			this.boldToolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+			this.moreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
 			this.blacksAndWhitesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -107,6 +108,7 @@ namespace LukeText_For_Desktop
 			this.yellowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.oliveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.yellowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.goldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.greensToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.lightGreenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -117,8 +119,10 @@ namespace LukeText_For_Desktop
 			this.lightBlueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pinkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.moreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-			this.goldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.aboutLukeTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.menuStrip1.SuspendLayout();
 			this.toolStrip1.SuspendLayout();
 			this.SuspendLayout();
@@ -127,7 +131,8 @@ namespace LukeText_For_Desktop
 			// 
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem});
+            this.editToolStripMenuItem,
+            this.aboutToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -375,7 +380,8 @@ namespace LukeText_For_Desktop
             this.verdanaToolStripMenuItem,
             this.rockwellToolStripMenuItem,
             this.franklinGothicToolStripMenuItem,
-            this.cascadiaToolStripMenuItem});
+            this.cascadiaToolStripMenuItem,
+            this.moreToolStripMenuItem});
 			this.toolStripButton2.Image = global::LukeText_For_Desktop.Properties.Resources.Font_Icon_16x161;
 			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButton2.Name = "toolStripButton2";
@@ -388,7 +394,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem,
             this.boldToolStripMenuItem});
 			this.calibriToolStripMenuItem.Name = "calibriToolStripMenuItem";
-			this.calibriToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.calibriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.calibriToolStripMenuItem.Text = "Calibri";
 			// 
 			// normalToolStripMenuItem
@@ -411,7 +417,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem1,
             this.boldToolStripMenuItem1});
 			this.garamondToolStripMenuItem.Name = "garamondToolStripMenuItem";
-			this.garamondToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.garamondToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.garamondToolStripMenuItem.Text = "Garamond";
 			// 
 			// normalToolStripMenuItem1
@@ -434,7 +440,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem2,
             this.boldToolStripMenuItem2});
 			this.timesNewRomanToolStripMenuItem.Name = "timesNewRomanToolStripMenuItem";
-			this.timesNewRomanToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.timesNewRomanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.timesNewRomanToolStripMenuItem.Text = "Times New Roman";
 			// 
 			// normalToolStripMenuItem2
@@ -457,7 +463,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem3,
             this.boldToolStripMenuItem3});
 			this.arialToolStripMenuItem.Name = "arialToolStripMenuItem";
-			this.arialToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.arialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.arialToolStripMenuItem.Text = "Arial";
 			// 
 			// normalToolStripMenuItem3
@@ -480,7 +486,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem4,
             this.boldToolStripMenuItem4});
 			this.cambriaToolStripMenuItem.Name = "cambriaToolStripMenuItem";
-			this.cambriaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.cambriaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.cambriaToolStripMenuItem.Text = "Cambria";
 			// 
 			// normalToolStripMenuItem4
@@ -503,7 +509,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem5,
             this.boldToolStripMenuItem5});
 			this.verdanaToolStripMenuItem.Name = "verdanaToolStripMenuItem";
-			this.verdanaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.verdanaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.verdanaToolStripMenuItem.Text = "Verdana";
 			// 
 			// normalToolStripMenuItem5
@@ -526,7 +532,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem6,
             this.boldToolStripMenuItem6});
 			this.rockwellToolStripMenuItem.Name = "rockwellToolStripMenuItem";
-			this.rockwellToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.rockwellToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.rockwellToolStripMenuItem.Text = "Rockwell";
 			// 
 			// normalToolStripMenuItem6
@@ -549,7 +555,7 @@ namespace LukeText_For_Desktop
             this.normalToolStripMenuItem7,
             this.boldToolStripMenuItem7});
 			this.franklinGothicToolStripMenuItem.Name = "franklinGothicToolStripMenuItem";
-			this.franklinGothicToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.franklinGothicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.franklinGothicToolStripMenuItem.Text = "Franklin Gothic";
 			// 
 			// normalToolStripMenuItem7
@@ -572,7 +578,7 @@ namespace LukeText_For_Desktop
             this.codeToolStripMenuItem,
             this.monoToolStripMenuItem});
 			this.cascadiaToolStripMenuItem.Name = "cascadiaToolStripMenuItem";
-			this.cascadiaToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+			this.cascadiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			this.cascadiaToolStripMenuItem.Text = "Cascadia";
 			// 
 			// codeToolStripMenuItem
@@ -669,6 +675,13 @@ namespace LukeText_For_Desktop
 			this.boldToolStripMenuItem8.Text = "Bold";
 			this.boldToolStripMenuItem8.Click += new System.EventHandler(this.boldToolStripMenuItem8_Click);
 			// 
+			// moreToolStripMenuItem
+			// 
+			this.moreToolStripMenuItem.Name = "moreToolStripMenuItem";
+			this.moreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.moreToolStripMenuItem.Text = "More...";
+			this.moreToolStripMenuItem.Click += new System.EventHandler(this.moreToolStripMenuItem_Click);
+			// 
 			// toolStripDropDownButton1
 			// 
 			this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -680,7 +693,8 @@ namespace LukeText_For_Desktop
             this.greensToolStripMenuItem,
             this.bluesToolStripMenuItem,
             this.purpleToolStripMenuItem,
-            this.pinkToolStripMenuItem});
+            this.pinkToolStripMenuItem,
+            this.moreToolStripMenuItem1});
 			this.toolStripDropDownButton1.Image = global::LukeText_For_Desktop.Properties.Resources.ColorSelector;
 			this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
@@ -701,28 +715,28 @@ namespace LukeText_For_Desktop
 			// blackToolStripMenuItem
 			// 
 			this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-			this.blackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.blackToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
 			this.blackToolStripMenuItem.Text = "Black";
 			this.blackToolStripMenuItem.Click += new System.EventHandler(this.blackToolStripMenuItem_Click);
 			// 
 			// silverToolStripMenuItem
 			// 
 			this.silverToolStripMenuItem.Name = "silverToolStripMenuItem";
-			this.silverToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.silverToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
 			this.silverToolStripMenuItem.Text = "Silver";
 			this.silverToolStripMenuItem.Click += new System.EventHandler(this.silverToolStripMenuItem_Click);
 			// 
 			// grayToolStripMenuItem
 			// 
 			this.grayToolStripMenuItem.Name = "grayToolStripMenuItem";
-			this.grayToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.grayToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
 			this.grayToolStripMenuItem.Text = "Gray";
 			this.grayToolStripMenuItem.Click += new System.EventHandler(this.grayToolStripMenuItem_Click);
 			// 
 			// whiteToolStripMenuItem
 			// 
 			this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
-			this.whiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.whiteToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
 			this.whiteToolStripMenuItem.Text = "White";
 			this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
 			// 
@@ -769,16 +783,23 @@ namespace LukeText_For_Desktop
 			// oliveToolStripMenuItem
 			// 
 			this.oliveToolStripMenuItem.Name = "oliveToolStripMenuItem";
-			this.oliveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.oliveToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.oliveToolStripMenuItem.Text = "Olive";
 			this.oliveToolStripMenuItem.Click += new System.EventHandler(this.oliveToolStripMenuItem_Click);
 			// 
 			// yellowToolStripMenuItem
 			// 
 			this.yellowToolStripMenuItem.Name = "yellowToolStripMenuItem";
-			this.yellowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.yellowToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.yellowToolStripMenuItem.Text = "Yellow";
 			this.yellowToolStripMenuItem.Click += new System.EventHandler(this.yellowToolStripMenuItem_Click);
+			// 
+			// goldToolStripMenuItem
+			// 
+			this.goldToolStripMenuItem.Name = "goldToolStripMenuItem";
+			this.goldToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+			this.goldToolStripMenuItem.Text = "Gold";
+			this.goldToolStripMenuItem.Click += new System.EventHandler(this.goldToolStripMenuItem_Click);
 			// 
 			// greensToolStripMenuItem
 			// 
@@ -856,6 +877,13 @@ namespace LukeText_For_Desktop
 			this.pinkToolStripMenuItem.Text = "Pink";
 			this.pinkToolStripMenuItem.Click += new System.EventHandler(this.pinkToolStripMenuItem_Click);
 			// 
+			// moreToolStripMenuItem1
+			// 
+			this.moreToolStripMenuItem1.Name = "moreToolStripMenuItem1";
+			this.moreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.moreToolStripMenuItem1.Text = "More...";
+			this.moreToolStripMenuItem1.Click += new System.EventHandler(this.moreToolStripMenuItem1_Click);
+			// 
 			// richTextBox1
 			// 
 			this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -865,12 +893,19 @@ namespace LukeText_For_Desktop
 			this.richTextBox1.TabIndex = 2;
 			this.richTextBox1.Text = "";
 			// 
-			// goldToolStripMenuItem
+			// aboutToolStripMenuItem
 			// 
-			this.goldToolStripMenuItem.Name = "goldToolStripMenuItem";
-			this.goldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			this.goldToolStripMenuItem.Text = "Gold";
-			this.goldToolStripMenuItem.Click += new System.EventHandler(this.goldToolStripMenuItem_Click);
+			this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutLukeTextToolStripMenuItem});
+			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+			this.aboutToolStripMenuItem.Text = "About";
+			// 
+			// aboutLukeTextToolStripMenuItem
+			// 
+			this.aboutLukeTextToolStripMenuItem.Name = "aboutLukeTextToolStripMenuItem";
+			this.aboutLukeTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			this.aboutLukeTextToolStripMenuItem.Text = "About LukeText";
 			// 
 			// Form1
 			// 
@@ -984,6 +1019,10 @@ namespace LukeText_For_Desktop
 		private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem pinkToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem goldToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem moreToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem moreToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem aboutLukeTextToolStripMenuItem;
 	}
 }
 

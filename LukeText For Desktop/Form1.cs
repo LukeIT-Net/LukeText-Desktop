@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace LukeText_For_Desktop
 {
@@ -32,28 +27,46 @@ namespace LukeText_For_Desktop
 		{
 			OpenFileDialog openFile = new OpenFileDialog();
 			openFile.Title = "Open Any File...";
+			openFile.Filter = "Text Document (*.txt)|*.txt|LukeText Document (*.ltd)|*.ltd|LukeText Text Document (*.ltdt)|*.ltdt|All Files (*.*)|*.*";
+			openFile.DefaultExt = "*.ltd";
+			openFile.FilterIndex = 2;
 			if (openFile.ShowDialog() == DialogResult.OK)
 			{
 				richTextBox1.Clear();
-				using (StreamReader sr = new StreamReader(openFile.FileName))
-				{
-					richTextBox1.Text = sr.ReadToEnd();
-					sr.Close();
-				}
+				string filename = openFile.FileName;
+				RichTextBoxStreamType streamType;
+					if (openFile.FilterIndex == 2)
+						streamType = RichTextBoxStreamType.RichText;
+					else
+						streamType = RichTextBoxStreamType.PlainText;
+
+				richTextBox1.LoadFile(filename, streamType);
 			}
+			
 		}
 
 		private void saveToolStripButton_Click(object sender, EventArgs e)
 		{
 			SaveFileDialog saveFile = new SaveFileDialog();
+			string filename = "";
 			saveFile.Title = "Save file as...";
-			saveFile.Filter = "LukeText Document (*.txt)|*.txt|All Files (*.*)|*.*";
-			if (saveFile.ShowDialog() == DialogResult.OK)
-			{
-				StreamWriter txtoutput = new StreamWriter(saveFile.FileName);
-				txtoutput.Write(richTextBox1.Text);
-				txtoutput.Close();
-			}
+			saveFile.Filter = "Text Document (*.txt)|*.txt|LukeText Document (*.ltd)|*.ltd|LukeText Text Document(*.ltdt)|*.ltdt|All Files (*.*)|*.*";
+			saveFile.DefaultExt = "*.ltd";
+			saveFile.FilterIndex = 2;
+			
+			DialogResult retval = saveFile.ShowDialog();
+			if (retval == DialogResult.OK)
+				filename = saveFile.FileName;
+			else
+				return;
+
+			RichTextBoxStreamType streamType;
+			if (saveFile.FilterIndex == 2)
+				streamType = RichTextBoxStreamType.RichText;
+			else
+				streamType = RichTextBoxStreamType.PlainText;
+
+			richTextBox1.SaveFile(filename, streamType);
 		}
 
 		private void cutToolStripButton_Click(object sender, EventArgs e)
@@ -334,6 +347,31 @@ namespace LukeText_For_Desktop
 		private void goldToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			richTextBox1.SelectionColor = Color.Gold;
+		}
+
+		private void aToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void moreToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			FontDialog fdlg = new FontDialog();
+			fdlg.ShowDialog();
+			richTextBox1.Font = fdlg.Font;
+		}
+
+		private void moreToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			ColorDialog cdlg = new ColorDialog();
+			cdlg.ShowDialog();
+			richTextBox1.ForeColor = cdlg.Color;
+
 		}
 	}
 }

@@ -67,7 +67,7 @@
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <AppxPackageSigningTimestampServerUrl>http://timestamp.digicert.com</AppxPackageSigningTimestampServerUrl>
-    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeText UWP Setup\AppPackages\SideLoading\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeText UWP Setup\AppPackages\</AppxPackageDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AppxBundle>Always</AppxBundle>
@@ -156,6 +156,7 @@
     <Content Include="Images\Wide310x150Logo.scale-150.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
+    <Content Include="Images\LukeTextLogo.png" />
     <None Include="Package.StoreAssociation.xml" />
     <PRIResource Include="Properties\Resources.resx" />
     <PRIResource Include="Resources.resw" />
