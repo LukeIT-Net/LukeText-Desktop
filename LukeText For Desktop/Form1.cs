@@ -65,7 +65,7 @@ namespace LukeText_For_Desktop
 				streamType = RichTextBoxStreamType.RichText;
 			else
 				streamType = RichTextBoxStreamType.PlainText;
-
+			
 			richTextBox1.SaveFile(filename, streamType);
 		}
 
@@ -349,16 +349,6 @@ namespace LukeText_For_Desktop
 			richTextBox1.SelectionColor = Color.Gold;
 		}
 
-		private void aToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-		{
-
-		}
-
 		private void moreToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			FontDialog fdlg = new FontDialog();
@@ -372,6 +362,61 @@ namespace LukeText_For_Desktop
 			cdlg.ShowDialog();
 			richTextBox1.ForeColor = cdlg.Color;
 
+		}
+
+		private void addImageToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			toolStripButton3.PerformClick();
+		}
+
+		private void toolStripButton3_Click(object sender, EventArgs e)
+		{
+			using (OpenFileDialog ofd = new OpenFileDialog())
+			{
+				ofd.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.png; *.bmp)|*.jpg; *.jpeg; *.gif; *.png; *.bmp";
+				if (ofd.ShowDialog() == DialogResult.OK)
+				{
+					Clipboard.SetImage(Image.FromFile(ofd.FileName));
+					richTextBox1.Paste();
+				}
+			}
+		}
+
+		private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+
+		}
+
+		private void yellowToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			richTextBox1.SelectionBackColor = Color.Yellow;
+		}
+
+		private void redToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			richTextBox1.SelectionBackColor = Color.Red;
+		}
+
+		private void greenToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			richTextBox1.SelectionBackColor = Color.Green;
+		}
+
+		private void blueToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			richTextBox1.SelectionBackColor = Color.Blue;
+		}
+
+		private void moreToolStripMenuItem2_Click(object sender, EventArgs e)
+		{
+			ColorDialog cdlg = new ColorDialog();
+			cdlg.ShowDialog();
+			richTextBox1.SelectionBackColor = cdlg.Color;
 		}
 	}
 }
