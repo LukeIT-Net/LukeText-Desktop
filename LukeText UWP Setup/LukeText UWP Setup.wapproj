@@ -67,7 +67,7 @@
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <AppxPackageSigningTimestampServerUrl>http://timestamp.digicert.com</AppxPackageSigningTimestampServerUrl>
-    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeText UWP Setup\AppPackages\SideLoading\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeText UWP Setup\AppPackages\</AppxPackageDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AppxBundle>Always</AppxBundle>
@@ -163,9 +163,9 @@
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" PrivateAssets="all" />
+    <ProjectReference Include="..\LukeText For Desktop\LukeText For Desktop.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LukeText For Desktop\LukeText For Desktop.csproj" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.755" />
   </ItemGroup>
 </Project>

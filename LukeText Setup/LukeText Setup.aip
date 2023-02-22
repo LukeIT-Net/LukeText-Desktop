@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="19.6" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="20.3" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
   <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
     <ROW Name="HiddenItems" Value="AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
-    <ROW Property="AI_CURRENT_YEAR" Value="2022" ValueLocId="-"/>
-    <ROW Property="AI_PACKAGING_TOOL" Value="Advanced Installer 19.6 build bf52c98e" ValueLocId="-"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2023" ValueLocId="-"/>
+    <ROW Property="AI_PACKAGING_TOOL" Value="Advanced Installer 20.3 build f51955ff" ValueLocId="-"/>
     <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_CORE_VERSION"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json" Value="LukeText For Desktop.deps.json"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1" Value="LukeText For Desktop.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Value="LukeText For Desktop.exe"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="LukeText For Desktop.runtimeconfig.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll" Value="WinRT.Runtime.dll"/>
     <ROW Property="AI_REQUIRED_DOTNET_CORE_DISPLAY" MultiBuildValue="DefaultBuild:6.0" ValueLocId="-"/>
     <ROW Property="AI_REQUIRED_DOTNET_CORE_VERSION" MultiBuildValue="DefaultBuild:6.0" ValueLocId="-"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="LukeIT"/>
-    <ROW Property="ProductCode" Value="1033:{28977CF1-520B-4201-B34D-7B76263FBF89} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{9D194A5D-41D7-45CF-AF6E-70CBBF769B7C} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="LukeText"/>
-    <ROW Property="ProductVersion" Value="1.3.1"/>
+    <ROW Property="ProductVersion" Value="2.0.0"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{0B096407-AC43-4EC4-A0C9-C12F0F74374A}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -93,12 +97,16 @@
     <ROW File="LukeTextForDesktop.exe" Component_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" FileName="LUKETE~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LukeTextForDesktop.exe&gt;" SelfReg="false" DigSign="true"/>
     <ROW File="LukeTextForDesktop.deps.json" Component_="LukeTextForDesktop_PrimaryOutput" FileName="LUKETE~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LukeTextForDesktop.deps.json&gt;" SelfReg="false"/>
     <ROW File="LukeTextForDesktop.runtimeconfig.json" Component_="LukeTextForDesktop_PrimaryOutput" FileName="LUKETE~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LukeTextForDesktop.runtimeconfig.json&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.SDK.NET.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="MICROS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll&gt;" SelfReg="false"/>
+    <ROW File="WinRT.Runtime.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="WINRTR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WinRT.Runtime.dll&gt;" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.deps.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WinRT.Runtime.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Type="2" Content="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
     <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
@@ -167,6 +175,7 @@
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#LukeTextForDesktop.exe]"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
@@ -230,6 +239,7 @@
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_DetectSoftware" Sequence="101"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
     <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 600) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 600) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10586)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 15063)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 16299)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17134)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18362)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19041)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
@@ -314,5 +324,7 @@
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="LukeTextForDesktop.exe"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="LukeTextForDesktop.deps.json"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="LukeTextForDesktop.runtimeconfig.json"/>
+    <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="WinRT.Runtime.dll"/>
   </COMPONENT>
 </DOCUMENT>

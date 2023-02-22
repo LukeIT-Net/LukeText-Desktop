@@ -11,6 +11,7 @@ namespace LukeText_For_Desktop
 		public Form1()
 		{
 			InitializeComponent();
+			richTextBox1.EnableAutoDragDrop = true;
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -413,6 +414,103 @@ namespace LukeText_For_Desktop
 		}
 
 		private void moreToolStripMenuItem2_Click(object sender, EventArgs e)
+		{
+			ColorDialog cdlg = new ColorDialog();
+			cdlg.ShowDialog();
+			richTextBox1.SelectionBackColor = cdlg.Color;
+		}
+
+		private void toolStripButton4_Click(object sender, EventArgs e)
+		{
+			Font SelectedText_Font = richTextBox1.SelectionFont;
+			if (SelectedText_Font != null)
+				richTextBox1.SelectionFont = new Font(SelectedText_Font, SelectedText_Font.Style ^ FontStyle.Underline);
+		}
+
+		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void toolStripButton5_Click(object sender, EventArgs e)
+		{
+			Font SelectedText_Font = richTextBox1.SelectionFont;
+			if (SelectedText_Font != null)
+				richTextBox1.SelectionFont = new Font(SelectedText_Font, SelectedText_Font.Style ^ FontStyle.Bold);
+		}
+
+		private void toolStripButton6_Click(object sender, EventArgs e)
+		{
+			Font SelectedText_Font = richTextBox1.SelectionFont;
+			if (SelectedText_Font != null)
+				richTextBox1.SelectionFont = new Font(SelectedText_Font, SelectedText_Font.Style ^ FontStyle.Italic);
+		}
+
+		private void toolStripButton7_Click(object sender, EventArgs e)
+		{
+			Font SelectedText_Font = richTextBox1.SelectionFont;
+			if (SelectedText_Font != null)
+				richTextBox1.SelectionFont = new Font(SelectedText_Font, SelectedText_Font.Style ^ FontStyle.Strikeout);
+		}
+
+		private void aboutLukeTextToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			toolStripButton5.PerformClick();
+		}
+
+		private void italicToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			toolStripButton6.PerformClick();
+		}
+
+		private void underlineToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			toolStripButton4.PerformClick();
+		}
+
+		private void strikethroughToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			toolStripButton7.PerformClick();
+		}
+
+		private void toolStripComboBox1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void leftToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			richTextBox1.Select();
+			richTextBox1.SelectionAlignment = HorizontalAlignment.Left;
+		}
+
+		private void centerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			richTextBox1.Select();
+			richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
+		}
+
+		private void rightToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			richTextBox1.Select();
+			richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
+		}
+
+		private void changeFontToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			FontDialog fdlg = new FontDialog();
+			fdlg.ShowDialog();
+			richTextBox1.Font = fdlg.Font;
+		}
+
+		private void colorToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			ColorDialog cdlg = new ColorDialog();
+			cdlg.ShowDialog();
+			richTextBox1.ForeColor = cdlg.Color;
+		}
+
+		private void highlightToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			ColorDialog cdlg = new ColorDialog();
 			cdlg.ShowDialog();

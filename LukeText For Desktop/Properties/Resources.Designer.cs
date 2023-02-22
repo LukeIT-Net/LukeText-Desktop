@@ -63,9 +63,99 @@ namespace LukeText_For_Desktop.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap boldicon {
+            get {
+                object obj = ResourceManager.GetObject("boldicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap ColorSelector {
             get {
                 object obj = ResourceManager.GetObject("ColorSelector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Align_Center_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Align_Center_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Align_Justify_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Align_Justify_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Align_Left_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Align_Left_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Align_Right_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Align_Right_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Bold_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Bold_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Italic_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Italic_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Strikethrough_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Strikethrough_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Editing_Underline_icon {
+            get {
+                object obj = ResourceManager.GetObject("Editing_Underline_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

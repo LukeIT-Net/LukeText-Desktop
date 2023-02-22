@@ -9,7 +9,7 @@
   <Identity
     Name="58786RealLukeJames.LukeTextUWP"
     Publisher="CN=7ED1D8D2-CDEF-4371-822C-1A7FA658B818"
-    Version="1.3.1.0" />
+    Version="2.0.0.0" />
 
   <Properties>
     <DisplayName>LukeTextUWP</DisplayName>
@@ -32,7 +32,7 @@
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="LukeText"
-        Description="LukeText for Windows 10/11 Home in S Mode"
+        Description="LukeText for Windows 10/11"
         BackgroundColor="transparent"
         Square150x150Logo="Images\Square150x150Logo.png"
         Square44x44Logo="Images\Square44x44Logo.png">
