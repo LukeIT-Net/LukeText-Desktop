@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -8,6 +9,23 @@ namespace LukeText_For_Desktop
 {
 	public partial class Form1 : Form
 	{
+		public Form1(string filename)
+		{
+			InitializeComponent();
+			if (filename != null )
+			{
+				try
+				{
+					richTextBox1.LoadFile(filename);
+				}
+				catch(Exception ex)
+				{ 
+					MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				}
+			}
+			richTextBox1.EnableAutoDragDrop = true;
+		}
+
 		public Form1()
 		{
 			InitializeComponent();
