@@ -57,6 +57,10 @@ namespace LukeText_For_Desktop
 			changeFontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			highlightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+			leftAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			centerAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			rightAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			toolStrip1 = new System.Windows.Forms.ToolStrip();
 			newToolStripButton = new System.Windows.Forms.ToolStripButton();
 			openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -148,6 +152,7 @@ namespace LukeText_For_Desktop
 			rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			toolStripButton3 = new System.Windows.Forms.ToolStripButton();
 			richTextBox1 = new System.Windows.Forms.RichTextBox();
+			aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			menuStrip1.SuspendLayout();
 			toolStrip1.SuspendLayout();
 			SuspendLayout();
@@ -167,7 +172,7 @@ namespace LukeText_For_Desktop
 			// 
 			fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
 			fileToolStripMenuItem.CheckOnClick = true;
-			fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator, saveToolStripMenuItem, toolStripSeparator1, exitToolStripMenuItem });
+			fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator, saveToolStripMenuItem, toolStripSeparator1, aboutToolStripMenuItem1, exitToolStripMenuItem });
 			fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
 			fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -235,7 +240,7 @@ namespace LukeText_For_Desktop
 			// 
 			undoToolStripMenuItem.Name = "undoToolStripMenuItem";
 			undoToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z;
-			undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			undoToolStripMenuItem.Text = "&Undo";
 			undoToolStripMenuItem.Click += undoToolStripMenuItem_Click;
 			// 
@@ -243,14 +248,14 @@ namespace LukeText_For_Desktop
 			// 
 			redoToolStripMenuItem.Name = "redoToolStripMenuItem";
 			redoToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y;
-			redoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			redoToolStripMenuItem.Text = "&Redo";
 			redoToolStripMenuItem.Click += redoToolStripMenuItem_Click;
 			// 
 			// toolStripSeparator3
 			// 
 			toolStripSeparator3.Name = "toolStripSeparator3";
-			toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+			toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
 			// 
 			// cutToolStripMenuItem
 			// 
@@ -258,7 +263,7 @@ namespace LukeText_For_Desktop
 			cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			cutToolStripMenuItem.Name = "cutToolStripMenuItem";
 			cutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X;
-			cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			cutToolStripMenuItem.Text = "Cu&t";
 			cutToolStripMenuItem.Click += cutToolStripMenuItem_Click;
 			// 
@@ -268,7 +273,7 @@ namespace LukeText_For_Desktop
 			copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			copyToolStripMenuItem.Name = "copyToolStripMenuItem";
 			copyToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C;
-			copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			copyToolStripMenuItem.Text = "&Copy";
 			copyToolStripMenuItem.Click += copyToolStripMenuItem_Click;
 			// 
@@ -278,33 +283,33 @@ namespace LukeText_For_Desktop
 			pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
 			pasteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V;
-			pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			pasteToolStripMenuItem.Text = "&Paste";
 			pasteToolStripMenuItem.Click += pasteToolStripMenuItem_Click;
 			// 
 			// toolStripSeparator4
 			// 
 			toolStripSeparator4.Name = "toolStripSeparator4";
-			toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+			toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
 			// 
 			// selectAllToolStripMenuItem
 			// 
 			selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-			selectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			selectAllToolStripMenuItem.Text = "Select &All";
 			selectAllToolStripMenuItem.Click += selectAllToolStripMenuItem_Click;
 			// 
 			// addImageToolStripMenuItem
 			// 
 			addImageToolStripMenuItem.Name = "addImageToolStripMenuItem";
-			addImageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			addImageToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
 			addImageToolStripMenuItem.Text = "Add &Image";
 			addImageToolStripMenuItem.Click += addImageToolStripMenuItem_Click;
 			// 
 			// aboutToolStripMenuItem
 			// 
 			aboutToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
-			aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { aboutLukeTextToolStripMenuItem, italicToolStripMenuItem, underlineToolStripMenuItem, strikethroughToolStripMenuItem, toolStripSeparator7, changeFontToolStripMenuItem, colorToolStripMenuItem, highlightToolStripMenuItem });
+			aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { aboutLukeTextToolStripMenuItem, italicToolStripMenuItem, underlineToolStripMenuItem, strikethroughToolStripMenuItem, toolStripSeparator7, changeFontToolStripMenuItem, colorToolStripMenuItem, highlightToolStripMenuItem, toolStripSeparator8, leftAlignToolStripMenuItem, centerAlignToolStripMenuItem, rightAlignToolStripMenuItem });
 			aboutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
 			aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
 			aboutToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
@@ -315,57 +320,90 @@ namespace LukeText_For_Desktop
 			// 
 			aboutLukeTextToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
 			aboutLukeTextToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+			aboutLukeTextToolStripMenuItem.Image = Properties.Resources.Editing_Bold_icon;
 			aboutLukeTextToolStripMenuItem.Name = "aboutLukeTextToolStripMenuItem";
-			aboutLukeTextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			aboutLukeTextToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			aboutLukeTextToolStripMenuItem.Text = "Bold";
 			aboutLukeTextToolStripMenuItem.Click += aboutLukeTextToolStripMenuItem_Click;
 			// 
 			// italicToolStripMenuItem
 			// 
+			italicToolStripMenuItem.Image = Properties.Resources.Editing_Italic_icon;
 			italicToolStripMenuItem.Name = "italicToolStripMenuItem";
-			italicToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			italicToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			italicToolStripMenuItem.Text = "Italic";
 			italicToolStripMenuItem.Click += italicToolStripMenuItem_Click;
 			// 
 			// underlineToolStripMenuItem
 			// 
+			underlineToolStripMenuItem.Image = Properties.Resources.Editing_Underline_icon;
 			underlineToolStripMenuItem.Name = "underlineToolStripMenuItem";
-			underlineToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			underlineToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			underlineToolStripMenuItem.Text = "Underline";
 			underlineToolStripMenuItem.Click += underlineToolStripMenuItem_Click;
 			// 
 			// strikethroughToolStripMenuItem
 			// 
+			strikethroughToolStripMenuItem.Image = Properties.Resources.Editing_Strikethrough_icon;
 			strikethroughToolStripMenuItem.Name = "strikethroughToolStripMenuItem";
-			strikethroughToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			strikethroughToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			strikethroughToolStripMenuItem.Text = "Strikethrough";
 			strikethroughToolStripMenuItem.Click += strikethroughToolStripMenuItem_Click;
 			// 
 			// toolStripSeparator7
 			// 
 			toolStripSeparator7.Name = "toolStripSeparator7";
-			toolStripSeparator7.Size = new System.Drawing.Size(177, 6);
+			toolStripSeparator7.Size = new System.Drawing.Size(143, 6);
 			// 
 			// changeFontToolStripMenuItem
 			// 
+			changeFontToolStripMenuItem.Image = Properties.Resources.Font_Icon_16x161;
 			changeFontToolStripMenuItem.Name = "changeFontToolStripMenuItem";
-			changeFontToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			changeFontToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			changeFontToolStripMenuItem.Text = "Font";
 			changeFontToolStripMenuItem.Click += changeFontToolStripMenuItem_Click;
 			// 
 			// colorToolStripMenuItem
 			// 
+			colorToolStripMenuItem.Image = Properties.Resources.ColorSelector;
 			colorToolStripMenuItem.Name = "colorToolStripMenuItem";
-			colorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			colorToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			colorToolStripMenuItem.Text = "Color";
 			colorToolStripMenuItem.Click += colorToolStripMenuItem_Click;
 			// 
 			// highlightToolStripMenuItem
 			// 
+			highlightToolStripMenuItem.Image = Properties.Resources.HighlightText;
 			highlightToolStripMenuItem.Name = "highlightToolStripMenuItem";
-			highlightToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			highlightToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			highlightToolStripMenuItem.Text = "Highlight";
 			highlightToolStripMenuItem.Click += highlightToolStripMenuItem_Click;
+			// 
+			// toolStripSeparator8
+			// 
+			toolStripSeparator8.Name = "toolStripSeparator8";
+			toolStripSeparator8.Size = new System.Drawing.Size(143, 6);
+			// 
+			// leftAlignToolStripMenuItem
+			// 
+			leftAlignToolStripMenuItem.Name = "leftAlignToolStripMenuItem";
+			leftAlignToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+			leftAlignToolStripMenuItem.Text = "Left Align";
+			leftAlignToolStripMenuItem.Click += leftAlignToolStripMenuItem_Click;
+			// 
+			// centerAlignToolStripMenuItem
+			// 
+			centerAlignToolStripMenuItem.Name = "centerAlignToolStripMenuItem";
+			centerAlignToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+			centerAlignToolStripMenuItem.Text = "Center Align";
+			centerAlignToolStripMenuItem.Click += centerAlignToolStripMenuItem_Click;
+			// 
+			// rightAlignToolStripMenuItem
+			// 
+			rightAlignToolStripMenuItem.Name = "rightAlignToolStripMenuItem";
+			rightAlignToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+			rightAlignToolStripMenuItem.Text = "Right Align";
+			rightAlignToolStripMenuItem.Click += rightAlignToolStripMenuItem_Click;
 			// 
 			// toolStrip1
 			// 
@@ -1050,6 +1088,13 @@ namespace LukeText_For_Desktop
 			richTextBox1.TabIndex = 2;
 			richTextBox1.Text = "";
 			// 
+			// aboutToolStripMenuItem1
+			// 
+			aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
+			aboutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			aboutToolStripMenuItem1.Text = "About";
+			aboutToolStripMenuItem1.Click += aboutToolStripMenuItem1_Click;
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1190,6 +1235,11 @@ namespace LukeText_For_Desktop
 		private System.Windows.Forms.ToolStripMenuItem changeFontToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem highlightToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
+		private System.Windows.Forms.ToolStripMenuItem leftAlignToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem centerAlignToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem rightAlignToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
 	}
 }
 

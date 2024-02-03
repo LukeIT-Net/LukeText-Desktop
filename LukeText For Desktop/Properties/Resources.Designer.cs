@@ -199,5 +199,15 @@ namespace LukeText_For_Desktop.Properties {
                 return ((System.Drawing.Icon)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap LukeTextAboutImage {
+            get {
+                object obj = ResourceManager.GetObject("LukeTextAboutImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

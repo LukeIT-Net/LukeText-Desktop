@@ -1,8 +1,7 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿using Microsoft.Win32;
 using System;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace LukeText_For_Desktop
@@ -12,15 +11,27 @@ namespace LukeText_For_Desktop
 		public Form1(string filename)
 		{
 			InitializeComponent();
-			if (filename != null )
+			const string userRoot = "HKEY_CURRENT_USER";
+			const string key1 = "Software";
+			const string key2 = "LukeIT";
+			const string key3 = "LukeText";
+			const string subkey = "PrivacyPolicy";
+			const string fullKey = userRoot + "\\" + key1 + "\\" + key2 + "\\" + key3;
+			string keyValue = (string)Registry.GetValue(fullKey, subkey, "NotAsked");
+			if (keyValue == "NotAsked")
+			{
+				MessageBox.Show("By using LukeText, You agree to the LukeIT Privacy Policy. Do you agree to the LukeIT Privacy Policy? To view the privacy policy, go to https://www.lukeit.net/PrivacyPolicy", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+				Registry.SetValue(fullKey, subkey, "Agreed", RegistryValueKind.String);
+			}
+			if (filename != null)
 			{
 				try
 				{
 					richTextBox1.LoadFile(filename);
 				}
-				catch(Exception ex)
-				{ 
-					MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				catch (Exception ex)
+				{
+					MessageBox.Show(ex.Message, "Error Loading File. Please try again.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
 			richTextBox1.EnableAutoDragDrop = true;
@@ -29,6 +40,18 @@ namespace LukeText_For_Desktop
 		public Form1()
 		{
 			InitializeComponent();
+			const string userRoot = "HKEY_CURRENT_USER";
+			const string key1 = "Software";
+			const string key2 = "LukeIT";
+			const string key3 = "LukeText";
+			const string subkey = "PrivacyPolicy";
+			const string fullKey = userRoot + "\\" + key1 + "\\" + key2 + "\\" + key3;
+			string keyValue = (string)Registry.GetValue(fullKey, subkey, "NotAsked");
+			if (keyValue == "NotAsked")
+			{
+				MessageBox.Show("By using LukeText, You agree to the LukeIT Privacy Policy. Do you agree to the LukeIT Privacy Policy? To view the privacy policy, go to https://www.lukeit.net/PrivacyPolicy", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+				Registry.SetValue(fullKey, subkey, "Agreed", RegistryValueKind.String);
+			}
 			richTextBox1.EnableAutoDragDrop = true;
 		}
 
@@ -54,14 +77,14 @@ namespace LukeText_For_Desktop
 				richTextBox1.Clear();
 				string filename = openFile.FileName;
 				RichTextBoxStreamType streamType;
-					if (openFile.FilterIndex == 2)
-						streamType = RichTextBoxStreamType.RichText;
-					else
-						streamType = RichTextBoxStreamType.PlainText;
+				if (openFile.FilterIndex == 2)
+					streamType = RichTextBoxStreamType.RichText;
+				else
+					streamType = RichTextBoxStreamType.PlainText;
 
 				richTextBox1.LoadFile(filename, streamType);
 			}
-			
+
 		}
 
 		private void saveToolStripButton_Click(object sender, EventArgs e)
@@ -72,7 +95,7 @@ namespace LukeText_For_Desktop
 			saveFile.Filter = "Text Document (*.txt)|*.txt|LukeText Document (*.ltd)|*.ltd|LukeText Text Document(*.ltdt)|*.ltdt|All Files (*.*)|*.*";
 			saveFile.DefaultExt = "*.ltd";
 			saveFile.FilterIndex = 2;
-			
+
 			DialogResult retval = saveFile.ShowDialog();
 			if (retval == DialogResult.OK)
 				filename = saveFile.FileName;
@@ -84,7 +107,7 @@ namespace LukeText_For_Desktop
 				streamType = RichTextBoxStreamType.RichText;
 			else
 				streamType = RichTextBoxStreamType.PlainText;
-			
+
 			richTextBox1.SaveFile(filename, streamType);
 		}
 
@@ -392,7 +415,7 @@ namespace LukeText_For_Desktop
 		{
 			using (OpenFileDialog ofd = new OpenFileDialog())
 			{
-				ofd.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.png; *.bmp)|*.jpg; *.jpeg; *.gif; *.png; *.bmp";
+				ofd.Filter = "Image Files (*.jpg; *.jpeg; *.gif; *.png; *.bmp)|*.jpg; *.jpeg; *.gif; *.png; *.bmp";
 				if (ofd.ShowDialog() == DialogResult.OK)
 				{
 					Clipboard.SetImage(Image.FromFile(ofd.FileName));
@@ -533,6 +556,27 @@ namespace LukeText_For_Desktop
 			ColorDialog cdlg = new ColorDialog();
 			cdlg.ShowDialog();
 			richTextBox1.SelectionBackColor = cdlg.Color;
+		}
+
+		private void leftAlignToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			leftToolStripMenuItem.PerformClick();
+		}
+
+		private void centerAlignToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			centerToolStripMenuItem.PerformClick();
+		}
+
+		private void rightAlignToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			rightToolStripMenuItem.PerformClick();
+		}
+
+		private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+		{
+			AboutBox1 aboutBox1 = new AboutBox1();
+			aboutBox1.Show();
 		}
 	}
 }

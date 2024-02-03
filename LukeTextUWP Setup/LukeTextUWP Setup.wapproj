@@ -56,7 +56,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <NoWarn>$(NoWarn);NU1702</NoWarn>
-    <PackageCertificateThumbprint>0D50A31AD979E5DCD6484B661B66EF4F9B0D2DB9</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>7D4DECC7B547B52DD5B0F8BC1250864738977C9F</PackageCertificateThumbprint>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
@@ -65,7 +65,7 @@
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <EntryPointProjectUniqueName>..\LukeText For Desktop\LukeText For Desktop.csproj</EntryPointProjectUniqueName>
-    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeTextUWP Setup\AppPackages\SideLoading\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\LukeV\source\repos\LukeText For Desktop\LukeTextUWP Setup\AppPackages\SideLoading</AppxPackageDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AppxBundle>Always</AppxBundle>

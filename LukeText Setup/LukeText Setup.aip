@@ -22,10 +22,10 @@
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="LukeIT"/>
-    <ROW Property="ProductCode" Value="1033:{C6A481ED-5641-4A51-9DFF-181E729828D9} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{7FA39ED4-F45A-4AD1-8238-3D6CFE8855B8} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="LukeText"/>
-    <ROW Property="ProductVersion" Value="2.1.0" Options="32"/>
+    <ROW Property="ProductVersion" Value="2.2.0" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{0B096407-AC43-4EC4-A0C9-C12F0F74374A}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
@@ -61,6 +61,7 @@
     <ROW Component="New_Key" ComponentId="{CC36A7A2-4684-406B-93E8-4441A7202B6B}" Directory_="APPDIR" Attributes="260" KeyPath="New_Key"/>
     <ROW Component="PerceivedType" ComponentId="{B6F57D74-B718-4A01-882B-BE86DFAE3151}" Directory_="APPDIR" Attributes="260" KeyPath="PerceivedType"/>
     <ROW Component="PerceivedType_1" ComponentId="{9365976F-3712-444A-8F68-8730E27F6C1F}" Directory_="APPDIR" Attributes="260" KeyPath="PerceivedType_1"/>
+    <ROW Component="PrivacyPolicy" ComponentId="{5DBB2F39-FD23-404A-A631-AF49DBC28BBF}" Directory_="APPDIR" Attributes="260" KeyPath="PrivacyPolicy"/>
     <ROW Component="ProductInformation" ComponentId="{2358D392-B54C-4692-B921-37461A7821FD}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
     <ROW Component="_" ComponentId="{1F64AD16-FE63-412E-A844-BD9169272087}" Directory_="APPDIR" Attributes="260" KeyPath="_"/>
     <ROW Component="__1" ComponentId="{0D0FFA91-8665-4D84-B17D-66C3A4CCF912}" Directory_="APPDIR" Attributes="260" KeyPath="__1"/>
@@ -211,6 +212,7 @@
     <ROW Feature_="MainFeature" Component_="__22"/>
     <ROW Feature_="MainFeature" Component_="__23"/>
     <ROW Feature_="MainFeature" Component_="__24"/>
+    <ROW Feature_="MainFeature" Component_="PrivacyPolicy"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" SourcePath="..\..\..\..\..\..\Windows\System32\notepad.exe" Index="0"/>
@@ -252,6 +254,7 @@
     <ROW Registry="LukeIT.LukeText.ltd_1" Root="0" Key=".ltd\OpenWithProgids" Name="LukeIT.LukeText.ltd" Component_="LukeIT.LukeText.ltd_1"/>
     <ROW Registry="LukeIT.LukeText.ltd_2" Root="0" Key=".ltdt\OpenWithProgids" Name="LukeIT.LukeText.ltdt" Component_="LukeIT.LukeText.ltd_2"/>
     <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Manufacturer_2" Root="1" Key="Software\[Manufacturer]" Name="\"/>
     <ROW Registry="New_Key" Root="0" Key=".ltd\shellex" Name="+" Component_="New_Key"/>
     <ROW Registry="New_Key_1" Root="0" Key=".ltd\shellex\{43843c70-4156-4232-96c4-a62f05dcadd8}" Name="\"/>
     <ROW Registry="OpenWithProgids" Root="0" Key=".ltd\OpenWithProgids" Name="\"/>
@@ -261,10 +264,13 @@
     <ROW Registry="PerceivedType_1" Root="0" Key=".ltdt" Name="PerceivedType" Value="luketextdocument" Component_="PerceivedType_1"/>
     <ROW Registry="PersistentHandler" Root="0" Key=".ltd\PersistentHandler" Name="\"/>
     <ROW Registry="PersistentHandler_1" Root="0" Key=".ltdt\PersistentHandler" Name="\"/>
+    <ROW Registry="PrivacyPolicy" Root="1" Key="Software\[Manufacturer]\[ProductName]" Name="PrivacyPolicy" Value="NotAsked" Component_="PrivacyPolicy"/>
     <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductName_1" Root="1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
     <ROW Registry="ShellNew" Root="0" Key=".ltd\ShellNew" Name="\"/>
     <ROW Registry="ShellNew_1" Root="0" Key=".ltdt\ShellNew" Name="\"/>
     <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Software_3" Root="1" Key="Software" Name="\"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
     <ROW Registry="_" Root="0" Key="LukeIT.LukeText.ltd\CLSID" Value="{F85F54B9-4D64-4EF6-A68F-75EC34E0D3DA}" Component_="_"/>
     <ROW Registry="__1" Root="0" Key="LukeIT.LukeText.ltd\DefaultIcon" Value="[#LukeTextForDesktop.dll_1],40002" Component_="__1"/>
