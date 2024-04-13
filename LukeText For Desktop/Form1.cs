@@ -3,6 +3,9 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Text.Json;
 
 namespace LukeText_For_Desktop
 {
@@ -52,6 +55,13 @@ namespace LukeText_For_Desktop
 				MessageBox.Show("By using LukeText, You agree to the LukeIT Privacy Policy. Do you agree to the LukeIT Privacy Policy? To view the privacy policy, go to https://www.lukeit.net/PrivacyPolicy", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 				Registry.SetValue(fullKey, subkey, "Agreed", RegistryValueKind.String);
 			}
+			string remoteUri = "https://api.lukeit.net/api/";
+			string remoteFile = "luketext.json", updateJsonFile = null;
+			string locationEnv = "%localappdata%/LukeIT/LukeText/Update.json";
+			string location = Environment.ExpandEnvironmentVariables(locationEnv);
+			WebClient updateChecker = new WebClient();
+			updateJsonFile = remoteUri + remoteFile;
+			updateChecker.DownloadFile(updateJsonFile, location);
 			richTextBox1.EnableAutoDragDrop = true;
 		}
 
