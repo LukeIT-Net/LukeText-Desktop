@@ -621,5 +621,16 @@ namespace LukeText_For_Desktop
 			AboutBox1 aboutBox1 = new AboutBox1();
 			aboutBox1.Show();
 		}
+
+		private void aboutLukeTextToolStripMenuItem1_Click_1(object sender, EventArgs e)
+		{
+			AboutBox1 aboutBox1 = new AboutBox1();
+			aboutBox1.Show();
+		}
+
+		private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

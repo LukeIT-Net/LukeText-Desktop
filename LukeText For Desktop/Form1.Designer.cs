@@ -61,6 +61,9 @@ namespace LukeText_For_Desktop
 			leftAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			centerAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			rightAlignToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			aboutLukeTextToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			toolStrip1 = new System.Windows.Forms.ToolStrip();
 			newToolStripButton = new System.Windows.Forms.ToolStripButton();
 			openToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -152,9 +155,6 @@ namespace LukeText_For_Desktop
 			rightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			toolStripButton3 = new System.Windows.Forms.ToolStripButton();
 			richTextBox1 = new System.Windows.Forms.RichTextBox();
-			helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			menuStrip1.SuspendLayout();
 			toolStrip1.SuspendLayout();
 			SuspendLayout();
@@ -174,7 +174,7 @@ namespace LukeText_For_Desktop
 			// 
 			fileToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
 			fileToolStripMenuItem.CheckOnClick = true;
-			fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator, saveToolStripMenuItem, toolStripSeparator1, aboutToolStripMenuItem1, exitToolStripMenuItem });
+			fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { newToolStripMenuItem, openToolStripMenuItem, toolStripSeparator, saveToolStripMenuItem, toolStripSeparator1, exitToolStripMenuItem });
 			fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
 			fileToolStripMenuItem.Name = "fileToolStripMenuItem";
 			fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -187,7 +187,7 @@ namespace LukeText_For_Desktop
 			newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			newToolStripMenuItem.Name = "newToolStripMenuItem";
 			newToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N;
-			newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+			newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
 			newToolStripMenuItem.Text = "&New";
 			newToolStripMenuItem.Click += newToolStripMenuItem_Click;
 			// 
@@ -406,6 +406,27 @@ namespace LukeText_For_Desktop
 			rightAlignToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			rightAlignToolStripMenuItem.Text = "Right Align";
 			rightAlignToolStripMenuItem.Click += rightAlignToolStripMenuItem_Click;
+			// 
+			// helpToolStripMenuItem
+			// 
+			helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { checkForUpdatesToolStripMenuItem, aboutLukeTextToolStripMenuItem1 });
+			helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+			helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+			helpToolStripMenuItem.Text = "Help";
+			// 
+			// checkForUpdatesToolStripMenuItem
+			// 
+			checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+			checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
+			checkForUpdatesToolStripMenuItem.Click += checkForUpdatesToolStripMenuItem_Click;
+			// 
+			// aboutLukeTextToolStripMenuItem1
+			// 
+			aboutLukeTextToolStripMenuItem1.Name = "aboutLukeTextToolStripMenuItem1";
+			aboutLukeTextToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			aboutLukeTextToolStripMenuItem1.Text = "About LukeText";
+			aboutLukeTextToolStripMenuItem1.Click += aboutLukeTextToolStripMenuItem1_Click_1;
 			// 
 			// toolStrip1
 			// 
@@ -1090,26 +1111,6 @@ namespace LukeText_For_Desktop
 			richTextBox1.TabIndex = 2;
 			richTextBox1.Text = "";
 			// 
-			// helpToolStripMenuItem
-			// 
-			helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { checkForUpdatesToolStripMenuItem });
-			helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-			helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-			helpToolStripMenuItem.Text = "Help";
-			// 
-			// checkForUpdatesToolStripMenuItem
-			// 
-			checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-			checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-			checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
-			// 
-			// aboutToolStripMenuItem1
-			// 
-			aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-			aboutToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
-			aboutToolStripMenuItem1.Text = "About";
-			aboutToolStripMenuItem1.Click += aboutToolStripMenuItem1_Click;
-			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1256,7 +1257,7 @@ namespace LukeText_For_Desktop
 		private System.Windows.Forms.ToolStripMenuItem rightAlignToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem aboutLukeTextToolStripMenuItem1;
 	}
 }
 
