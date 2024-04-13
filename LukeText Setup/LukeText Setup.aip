@@ -12,12 +12,14 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json" Value="LukeText For Desktop.deps.json"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1" Value="LukeText For Desktop.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Value="LukeText For Desktop.exe"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Value="LukeText For Desktop.runtimeconfig.json"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll" Value="Newtonsoft.Json.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll" Value="WinRT.Runtime.dll"/>
     <ROW Property="AI_REQUIRED_DOTNET_CORE_DISPLAY" MultiBuildValue="DefaultBuild:8.0" ValueLocId="-"/>
     <ROW Property="AI_REQUIRED_DOTNET_CORE_VERSION" MultiBuildValue="DefaultBuild:8.0" ValueLocId="-"/>
@@ -107,6 +109,7 @@
     <ROW File="Microsoft.Windows.SDK.NET.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="MICROS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll&gt;" SelfReg="false"/>
     <ROW File="WinRT.Runtime.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="WINRTR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WinRT.Runtime.dll&gt;" SelfReg="false"/>
     <ROW File="Update.json" Component_="Update.json" FileName="UPDATE~1.JSO|Update.json" Attributes="0" SourcePath="C:\Users\LukeV\AppData\Local\LukeIT\LukeText\Update.json" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll&gt;" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.deps.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json]" Type="2" Content="0"/>
@@ -114,6 +117,7 @@
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.runtimeconfig.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.runtimeconfig.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.runtimeconfig.json]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_WinRT.Runtime.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Type="2" Content="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
@@ -249,7 +253,7 @@
     <ROW Feature_="MainFeature" Component_="Update.json"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" SourcePath="..\..\..\..\..\Windows\System32\notepad.exe" Index="0"/>
+    <ROW Name="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" SourcePath="C:\Windows\System32\notepad.exe" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -369,5 +373,6 @@
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="LukeTextForDesktop.runtimeconfig.json"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="Microsoft.Windows.SDK.NET.dll"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="WinRT.Runtime.dll"/>
+    <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="Newtonsoft.Json.dll"/>
   </COMPONENT>
 </DOCUMENT>
