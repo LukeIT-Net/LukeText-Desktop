@@ -39,6 +39,25 @@ namespace LukeText_For_Desktop
 					MessageBox.Show(ex.Message, "Error Loading File. Please try again.", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			}
+			string remoteUri = "http://api.lukeit.net/api/";
+			string remoteFile = "luketext.json", updateJsonFile = null;
+			string locationEnv = "%localappdata%/LukeIT/LukeText/Update.json";
+			string location = Environment.ExpandEnvironmentVariables(locationEnv);
+			WebClient updateChecker = new WebClient();
+			updateJsonFile = remoteUri + remoteFile;
+			updateChecker.DownloadFile(updateJsonFile, location);
+			string json = File.ReadAllText(location);
+			JToken token = JArray.Parse(json);
+			string version = (string)token.SelectToken("version");
+			string update = (string)token.SelectToken("update");
+			if (version == "2.2.1" && update == "true")
+			{
+				DialogResult result = MessageBox.Show("A New LukeText Update is Available! Do you want to download it?", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+				if (result == DialogResult.Yes)
+				{
+					System.Diagnostics.Process.Start("https://www.lukeit.net/LukeText");
+				}
+			}
 			richTextBox1.EnableAutoDragDrop = true;
 		}
 
@@ -70,7 +89,11 @@ namespace LukeText_For_Desktop
 			string update = (string)token.SelectToken("update");
 			if (version == "2.2.1" && update == "true")
 			{
-				MessageBox.Show("A New LukeText Update is Available!", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+				DialogResult result = MessageBox.Show("A New LukeText Update is Available! Do you want to download it?", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+				if (result == DialogResult.Yes)
+				{
+					System.Diagnostics.Process.Start("https://www.lukeit.net/LukeText");
+				}
 			}
 			richTextBox1.EnableAutoDragDrop = true;
 		}
