@@ -56,7 +56,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <NoWarn>$(NoWarn);NU1702</NoWarn>
-    <PackageCertificateThumbprint>7D4DECC7B547B52DD5B0F8BC1250864738977C9F</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>210F870A66B420F549ABD9ABE1377BC8DDF7FA2F</PackageCertificateThumbprint>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
@@ -156,6 +156,7 @@
     <Content Include="Images\Wide310x150Logo.scale-150.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
+    <None Include="LukeTextUWP Setup_TemporaryKey.pfx" />
     <PRIResource Include="Properties\Resources.resx" />
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>

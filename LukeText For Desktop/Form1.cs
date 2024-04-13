@@ -67,7 +67,11 @@ namespace LukeText_For_Desktop
 			string json = File.ReadAllText(location);
 			JToken token = JArray.Parse(json);
 			string version = (string)token.SelectToken("version");
-			string update = (string)token.SelectToken("update"); 
+			string update = (string)token.SelectToken("update");
+			if (version == "2.2.1" && update == "true")
+			{
+				MessageBox.Show("A New LukeText Update is Available!", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
+			}
 			richTextBox1.EnableAutoDragDrop = true;
 		}
 
