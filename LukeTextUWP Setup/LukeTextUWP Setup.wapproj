@@ -104,7 +104,8 @@
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />
   <ItemGroup>
-    <Content Include="FileIcon.png" />
+    <Content Include="FileIconLTD.png" />
+    <Content Include="FileIconLTDT.png" />
     <Content Include="Images\LargeTile.scale-100.png" />
     <Content Include="Images\LargeTile.scale-125.png" />
     <Content Include="Images\LargeTile.scale-150.png" />
@@ -157,9 +158,12 @@
     <Content Include="Images\Wide310x150Logo.scale-150.png" />
     <Content Include="Images\Wide310x150Logo.scale-200.png" />
     <Content Include="Images\Wide310x150Logo.scale-400.png" />
+    <PRIResource Include="Properties\Resources.resw" />
     <None Include="Images\ltdfile.ico" />
     <None Include="LukeTextUWP Setup_TemporaryKey.pfx" />
-    <PRIResource Include="Properties\Resources.resx" />
+    <PRIResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+    </PRIResource>
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>

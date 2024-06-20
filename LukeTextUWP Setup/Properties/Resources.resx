@@ -120,4 +120,10 @@
   <data name="Application" xml:space="preserve">
     <value>LukeTextUWP.exe</value>
   </data>
+  <data name="LukeTextTextDocumentFileName" xml:space="preserve">
+    <value>LukeText Text Document</value>
+  </data>
+  <data name="LukeTextDocumentFileName" xml:space="preserve">
+    <value>LukeText Document</value>
+  </data>
 </root>

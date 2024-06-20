@@ -49,8 +49,8 @@
             <uap:SupportedFileTypes>
               <uap:FileType ContentType="text/rtf">.ltd</uap:FileType>
             </uap:SupportedFileTypes>
-            <uap:DisplayName>LukeText Document</uap:DisplayName>
-            <uap:Logo>FileIcon.png</uap:Logo>
+            <uap:DisplayName>ms-resource:LukeTextDocument_FileName</uap:DisplayName>
+            <uap:Logo>FileIconLTD.png</uap:Logo>
           </uap:FileTypeAssociation>
         </uap:Extension>
         <uap:Extension Category="windows.protocol">
@@ -64,8 +64,8 @@
             <uap:SupportedFileTypes>
               <uap:FileType ContentType="text/plain">.ltdt</uap:FileType>
             </uap:SupportedFileTypes>
-            <uap:DisplayName>LukeText Text Document</uap:DisplayName>
-            <uap:Logo>FileIcon.png</uap:Logo>
+            <uap:DisplayName>ms-resource:LukeTextTextDocument_FileName</uap:DisplayName>
+            <uap:Logo>FileIconLTDT.png</uap:Logo>
           </uap:FileTypeAssociation>
         </uap:Extension>
       </Extensions>
@@ -75,5 +75,6 @@
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
     <uap:Capability Name="removableStorage"/>
+    <Capability Name="internetClient"/>
   </Capabilities>
 </Package>
