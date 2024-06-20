@@ -47,11 +47,10 @@
         <uap:Extension Category="windows.fileTypeAssociation">
           <uap:FileTypeAssociation Name="luketextdocument">
             <uap:SupportedFileTypes>
-              <uap:FileType ContentType="text/plain">.ltdt</uap:FileType>
               <uap:FileType ContentType="text/rtf">.ltd</uap:FileType>
             </uap:SupportedFileTypes>
-            <uap:DisplayName>LukeText</uap:DisplayName>
-            <uap:Logo>Images\FileIcon.png</uap:Logo>
+            <uap:DisplayName>LukeText Document</uap:DisplayName>
+            <uap:Logo>FileIcon.png</uap:Logo>
           </uap:FileTypeAssociation>
         </uap:Extension>
         <uap:Extension Category="windows.protocol">
@@ -59,6 +58,15 @@
             <uap:Logo>Images\LukeTextLogo.png</uap:Logo>
             <uap:DisplayName>LukeTextUWP</uap:DisplayName>
           </uap:Protocol>
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="luketexttextdocument">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="text/plain">.ltdt</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:DisplayName>LukeText Text Document</uap:DisplayName>
+            <uap:Logo>FileIcon.png</uap:Logo>
+          </uap:FileTypeAssociation>
         </uap:Extension>
       </Extensions>
     </Application>

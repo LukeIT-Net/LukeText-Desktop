@@ -30,9 +30,15 @@ namespace LukeText_For_Desktop
 			}
 			if (filename != null)
 			{
+				RichTextBoxStreamType streamType;
+				string ext = Path.GetExtension(filename);
+				if (ext == ".ltd")
+					streamType = RichTextBoxStreamType.RichText;
+				else
+					streamType = RichTextBoxStreamType.PlainText;
 				try
 				{
-					richTextBox1.LoadFile(filename);
+					richTextBox1.LoadFile(filename, streamType);
 				}
 				catch (Exception ex)
 				{
