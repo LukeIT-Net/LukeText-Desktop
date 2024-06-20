@@ -1,9 +1,12 @@
-﻿using System;
+﻿using LukeText_For_Desktop.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,6 +25,8 @@ namespace LukeText_For_Desktop
 			this.labelCompanyName.Text = AssemblyCompany;
 			this.textBoxDescription.Text = AssemblyDescription;
 			*/
+			string file = Application.StartupPath + "LICENSE.rtf";
+			richTextBox1.LoadFile(file, RichTextBoxStreamType.RichText);
 		}
 
 		#region Assembly Attribute Accessors
@@ -40,8 +45,10 @@ namespace LukeText_For_Desktop
 					}
 				}
 #pragma warning disable CS8603 // Possible null reference return.
+#pragma warning disable SYSLIB0012
 				return System.IO.Path.GetFileNameWithoutExtension(Assembly.GetExecutingAssembly().CodeBase);
 #pragma warning restore CS8603 // Possible null reference return.
+#pragma warning restore SYSLIB0012
 			}
 		}
 
@@ -141,6 +148,11 @@ namespace LukeText_For_Desktop
 		private void okButton_Click(object sender, EventArgs e)
 		{
 			Close();
+		}
+
+		private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
+		{
+
 		}
 	}
 }

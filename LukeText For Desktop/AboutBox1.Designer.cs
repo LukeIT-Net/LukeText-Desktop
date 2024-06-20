@@ -33,8 +33,8 @@
 			labelVersion = new System.Windows.Forms.Label();
 			labelCopyright = new System.Windows.Forms.Label();
 			labelCompanyName = new System.Windows.Forms.Label();
-			textBoxDescription = new System.Windows.Forms.TextBox();
 			okButton = new System.Windows.Forms.Button();
+			richTextBox1 = new System.Windows.Forms.RichTextBox();
 			tableLayoutPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
 			SuspendLayout();
@@ -49,8 +49,8 @@
 			tableLayoutPanel.Controls.Add(labelVersion, 1, 1);
 			tableLayoutPanel.Controls.Add(labelCopyright, 1, 2);
 			tableLayoutPanel.Controls.Add(labelCompanyName, 1, 3);
-			tableLayoutPanel.Controls.Add(textBoxDescription, 1, 4);
 			tableLayoutPanel.Controls.Add(okButton, 1, 5);
+			tableLayoutPanel.Controls.Add(richTextBox1, 1, 4);
 			tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
 			tableLayoutPanel.Location = new System.Drawing.Point(10, 10);
 			tableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -64,6 +64,7 @@
 			tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			tableLayoutPanel.Size = new System.Drawing.Size(487, 307);
 			tableLayoutPanel.TabIndex = 0;
+			tableLayoutPanel.Paint += tableLayoutPanel_Paint;
 			// 
 			// logoPictureBox
 			// 
@@ -128,21 +129,6 @@
 			labelCompanyName.Text = "LukeText is licensed under the GNU GPL v3 License";
 			labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
-			// textBoxDescription
-			// 
-			textBoxDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-			textBoxDescription.Location = new System.Drawing.Point(167, 123);
-			textBoxDescription.Margin = new System.Windows.Forms.Padding(7, 3, 4, 3);
-			textBoxDescription.Multiline = true;
-			textBoxDescription.Name = "textBoxDescription";
-			textBoxDescription.ReadOnly = true;
-			textBoxDescription.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			textBoxDescription.Size = new System.Drawing.Size(316, 147);
-			textBoxDescription.TabIndex = 23;
-			textBoxDescription.TabStop = false;
-			textBoxDescription.Text = "View the GNU GPL v3 License at https://www.gnu.org/licenses/gpl-3.0.en.html#license-text";
-			textBoxDescription.TextChanged += textBoxDescription_TextChanged_1;
-			// 
 			// okButton
 			// 
 			okButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
@@ -154,6 +140,14 @@
 			okButton.TabIndex = 24;
 			okButton.Text = "&OK";
 			okButton.Click += okButton_Click;
+			// 
+			// richTextBox1
+			// 
+			richTextBox1.Location = new System.Drawing.Point(163, 123);
+			richTextBox1.Name = "richTextBox1";
+			richTextBox1.Size = new System.Drawing.Size(321, 147);
+			richTextBox1.TabIndex = 25;
+			richTextBox1.Text = "";
 			// 
 			// AboutBox1
 			// 
@@ -174,7 +168,6 @@
 			Text = "About LukeText";
 			Load += AboutBox1_Load;
 			tableLayoutPanel.ResumeLayout(false);
-			tableLayoutPanel.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)logoPictureBox).EndInit();
 			ResumeLayout(false);
 		}
@@ -188,6 +181,6 @@
 		private System.Windows.Forms.Button okButton;
 		private System.Windows.Forms.Label labelCopyright;
 		private System.Windows.Forms.Label labelCompanyName;
-		private System.Windows.Forms.TextBox textBoxDescription;
+		private System.Windows.Forms.RichTextBox richTextBox1;
 	}
 }

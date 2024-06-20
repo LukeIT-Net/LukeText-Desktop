@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="21.6" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
-  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
-    <ROW Name="HiddenItems" Value="AppXAppDetailsComponent;FixupComponent;AppXCapabilitiesComponent;AppXDependenciesComponent;AppXProductDetailsComponent;AppXVisualAssetsComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
-  </COMPONENT>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.6.1" version="21.8.2" Modules="simple" RootPath="." Language="en" Id="{7FDE86E4-0EC0-41DB-B9BA-7048A9FD6451}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_APP_FILE" Value="[#LukeTextForDesktop.exe]"/>
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
@@ -25,6 +22,7 @@
     <ROW Property="AI_REQUIRED_DOTNET_CORE_VERSION" MultiBuildValue="DefaultBuild:8.0" ValueLocId="-"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="LukeTextForDesktop.exe" Type="8"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="LukeIT"/>
     <ROW Property="ProductCode" Value="1033:{A8ADC51F-A10B-4AC9-85C2-861878BBD66E} " Type="16"/>
@@ -45,8 +43,8 @@
     <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
     <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64" ValueLocId="-"/>
-    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 11 version 21H2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64, Windows 10 version 1607 x64, Windows 10 version 1703 x64, Windows 10 version 1709 x64, Windows 10 version 1803 x64, Windows 10 version 1809 x64, Windows 10 version 1903 x64, Windows 10 version 1909 x64, Windows 10 version 2004 x64, Windows 10 version 20H2 x64, Windows 10 version 21H1 x64, Windows 10 version 21H2 x64, Windows 11 version 21H2 x64" ValueLocId="-"/>
     <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
@@ -65,6 +63,8 @@
     <ROW Component="ContentType_1" ComponentId="{96A2AC33-8B62-44AF-9A6F-97B60BADED2F}" Directory_="APPDIR" Attributes="260" KeyPath="ContentType_1"/>
     <ROW Component="Data" ComponentId="{9C42C3A9-34B8-47C6-ABD7-35C6E343A0BA}" Directory_="APPDIR" Attributes="260" KeyPath="Data"/>
     <ROW Component="Data_1" ComponentId="{8C183B0A-B6FF-43B7-802A-E4E4DE7403FB}" Directory_="APPDIR" Attributes="260" KeyPath="Data_1"/>
+    <ROW Component="Default" ComponentId="{5E1C8BFA-1C90-4C26-919C-BEAD09ABEBC1}" Directory_="APPDIR" Attributes="260" KeyPath="Default"/>
+    <ROW Component="Default_1" ComponentId="{0044DB97-192F-4B2C-BADC-8A968ECF8302}" Directory_="APPDIR" Attributes="260" KeyPath="Default_1"/>
     <ROW Component="LukeIT.LukeText.ltd1" ComponentId="{098D924A-150F-425D-B6EA-A00B11C71DE1}" Directory_="APPDIR" Attributes="260" KeyPath="LukeIT.LukeText.ltd1"/>
     <ROW Component="LukeIT.LukeText.ltd_1" ComponentId="{FDADBDBD-4B3C-4B61-AF41-21BC659FF85D}" Directory_="APPDIR" Attributes="260" KeyPath="LukeIT.LukeText.ltd_1"/>
     <ROW Component="LukeIT.LukeText.ltd_2" ComponentId="{E5D9E243-2BA7-4D2E-A226-350A22857421}" Directory_="APPDIR" Attributes="260" KeyPath="LukeIT.LukeText.ltd_2"/>
@@ -110,6 +110,7 @@
     <ROW File="WinRT.Runtime.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="WINRTR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WinRT.Runtime.dll&gt;" SelfReg="false"/>
     <ROW File="Update.json" Component_="Update.json" FileName="UPDATE~1.JSO|Update.json" Attributes="0" SourcePath="C:\Users\LukeV\AppData\Local\LukeIT\LukeText\Update.json" SelfReg="false"/>
     <ROW File="Newtonsoft.Json.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll&gt;" SelfReg="false"/>
+    <ROW File="LICENSE.rtf" Component_="LukeTextForDesktop_PrimaryOutput" FileName="LICENSE.rtf" Attributes="0" SourcePath="C:\Users\LukeV\Downloads\LICENSE.rtf" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.deps.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json]" Type="2" Content="0"/>
@@ -137,7 +138,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
     <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
-    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
     <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
     <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
     <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
@@ -160,15 +161,16 @@
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
     <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="C:\Users\LukeV\Downloads\LICENSE.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
-    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
-    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
-    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
     <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
-    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="201"/>
     <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
     <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
     <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
@@ -183,6 +185,8 @@
     <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
     <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
     <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
@@ -251,9 +255,11 @@
     <ROW Feature_="MainFeature" Component_="__24"/>
     <ROW Feature_="MainFeature" Component_="PrivacyPolicy"/>
     <ROW Feature_="MainFeature" Component_="Update.json"/>
+    <ROW Feature_="MainFeature" Component_="Default"/>
+    <ROW Feature_="MainFeature" Component_="Default_1"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" SourcePath="C:\Windows\System32\notepad.exe" Index="0"/>
+    <ROW Name="LukeTextForDesktop.exe" SourcePath="..\LukeText For Desktop\bin\Release\net8.0-windows10.0.19041.0\LukeText For Desktop.exe" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -284,7 +290,7 @@
     <ROW Action="AI_DetectSoftware" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
-    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10240)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10586)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 14393)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 15063)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 16299)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17134)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17763)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18362)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18363)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19041)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19042)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19043)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19044)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10240)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 10586)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 14393)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 15063)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 16299)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17134)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 17763)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18362)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 18363)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19041)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19042)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19043)) AND ((VersionNT64 &lt;&gt; 1000) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 19044)) AND ((VersionNT64 &lt;&gt; 1100) OR (MsiNTProductType &lt;&gt; 1) OR (WindowsBuild &lt;&gt; 22000)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
@@ -300,8 +306,11 @@
     <ROW Registry="ContentType_1" Root="0" Key=".ltdt" Name="Content Type" Value="application\luketext" Component_="ContentType_1"/>
     <ROW Registry="Data" Root="0" Key=".ltd\ShellNew" Name="Data" Value="{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Segoe UI;}}[~]{\*\generator Riched20 10.0.19041}\viewkind4\uc1 [~]\pard\f0\fs18\par[~]}" Component_="Data"/>
     <ROW Registry="Data_1" Root="0" Key=".ltdt\ShellNew" Name="Data" Value="hello world" Component_="Data_1"/>
+    <ROW Registry="Default" Root="0" Key=".ltd\DefaultIcon" Name="(Default)" Value="[#LukeTextForDesktop.dll_1],40001" Component_="Default"/>
     <ROW Registry="DefaultIcon" Root="0" Key="LukeIT.LukeText.ltd\DefaultIcon" Name="\"/>
+    <ROW Registry="DefaultIcon_1" Root="0" Key=".ltdt\DefaultIcon" Name="\"/>
     <ROW Registry="DefaultIcon_2" Root="0" Key="LukeIT.LukeText.ltdt\DefaultIcon" Name="\"/>
+    <ROW Registry="Default_1" Root="0" Key=".ltdt\DefaultIcon" Name="(Default)" Value="[#LukeTextForDesktop.dll_1],40002" Component_="Default_1"/>
     <ROW Registry="LukeIT.LukeText.ltd" Root="0" Key="LukeIT.LukeText.ltd" Name="\"/>
     <ROW Registry="LukeIT.LukeText.ltd1" Root="0" Key="LukeIT.LukeText.ltdt" Name="+" Component_="LukeIT.LukeText.ltd1"/>
     <ROW Registry="LukeIT.LukeText.ltd_1" Root="0" Key=".ltd\OpenWithProgids" Name="LukeIT.LukeText.ltd" Component_="LukeIT.LukeText.ltd_1"/>
@@ -310,6 +319,7 @@
     <ROW Registry="Manufacturer_2" Root="1" Key="Software\[Manufacturer]" Name="\"/>
     <ROW Registry="New_Key" Root="0" Key=".ltd\shellex" Name="+" Component_="New_Key"/>
     <ROW Registry="New_Key_1" Root="0" Key=".ltd\shellex\{43843c70-4156-4232-96c4-a62f05dcadd8}" Name="\"/>
+    <ROW Registry="New_Key_2" Root="0" Key=".ltd\DefaultIcon" Name="\"/>
     <ROW Registry="OpenWithProgids" Root="0" Key=".ltd\OpenWithProgids" Name="\"/>
     <ROW Registry="OpenWithProgids_1" Root="0" Key=".ltdt\OpenWithProgids" Name="\"/>
     <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
@@ -326,7 +336,7 @@
     <ROW Registry="Software_3" Root="1" Key="Software" Name="\"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
     <ROW Registry="_" Root="0" Key="LukeIT.LukeText.ltd\CLSID" Value="{F85F54B9-4D64-4EF6-A68F-75EC34E0D3DA}" Component_="_"/>
-    <ROW Registry="__1" Root="0" Key="LukeIT.LukeText.ltd\DefaultIcon" Value="[#LukeTextForDesktop.dll_1],40002" Component_="__1"/>
+    <ROW Registry="__1" Root="0" Key="LukeIT.LukeText.ltd\DefaultIcon" Value="[#LukeTextForDesktop.dll_1],40001" Component_="__1"/>
     <ROW Registry="__10" Root="0" Key=".ltdt\shellex\{ed789f9b-6baa-4817-972a-6d340412e884}" Value="{bd733441-2bf3-48ef-a5c6-03c38d87698b}" Component_="__10"/>
     <ROW Registry="__11" Root="0" Key=".ltdt\OpenWithProgids" Component_="__11"/>
     <ROW Registry="__12" Root="0" Key=".ltdt" Value="LukeIT.LukeText.ltd" Component_="__12"/>
@@ -357,7 +367,7 @@
     <ROW Registry="shellex" Root="0" Key=".ltdt\shellex" Name="+" Component_="shellex"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="AI_PROPPATH_FILENAME_PERBUILD_LukeT" Directory_="DesktopFolder" Name="LukeText" Component_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Target="[#LukeTextForDesktop.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" IconIndex="0" ShowCmd="1" WkDir="LukeTextForDesktop_Dir"/>
+    <ROW Shortcut="AI_PROPPATH_FILENAME_PERBUILD_LukeT" Directory_="DesktopFolder" Name="LukeText" Component_="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Target="[#LukeTextForDesktop.exe]" Hotkey="0" Icon_="LukeTextForDesktop.exe" IconIndex="0" ShowCmd="1" WkDir="LukeTextForDesktop_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>

@@ -161,6 +161,26 @@ namespace LukeText_For_Desktop.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] FileIconLTD {
+            get {
+                object obj = ResourceManager.GetObject("FileIconLTD", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] FileIconLTDT {
+            get {
+                object obj = ResourceManager.GetObject("FileIconLTDT", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon Font_Icon_16x16 {
