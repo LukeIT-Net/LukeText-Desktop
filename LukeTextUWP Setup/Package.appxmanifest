@@ -51,7 +51,7 @@
               <uap:FileType ContentType="text/rtf">.ltd</uap:FileType>
             </uap:SupportedFileTypes>
             <uap:DisplayName>LukeText</uap:DisplayName>
-            <uap:Logo>Images\LukeTextLogo.png</uap:Logo>
+            <uap:Logo>Images\FileIcon.png</uap:Logo>
           </uap:FileTypeAssociation>
         </uap:Extension>
         <uap:Extension Category="windows.protocol">
