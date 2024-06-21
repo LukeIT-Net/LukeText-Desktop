@@ -35,7 +35,9 @@ namespace LukeText_For_Desktop
 			string remoteFile = "luketext.json", updateJsonFile = null;
 			string locationEnv = "%localappdata%/LukeIT/LukeText/Update.json";
 			string location = Environment.ExpandEnvironmentVariables(locationEnv);
+#pragma warning disable SYSLIB0014
 			WebClient updateChecker = new WebClient();
+#pragma warning restore SYSLIB0014
 			updateJsonFile = remoteUri + remoteFile;
 			updateChecker.DownloadFile(updateJsonFile, location);
 			string json = File.ReadAllText(location);
