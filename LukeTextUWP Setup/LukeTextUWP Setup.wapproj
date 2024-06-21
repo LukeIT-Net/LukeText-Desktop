@@ -65,7 +65,7 @@
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <EntryPointProjectUniqueName>..\LukeText For Desktop\LukeText For Desktop.csproj</EntryPointProjectUniqueName>
-    <AppxPackageDir>D:\Coding\Projects\Visual Studio\LukeText For Desktop\LukeTextUWP Setup\AppPackages\SideLoading</AppxPackageDir>
+    <AppxPackageDir>D:\Coding\Projects\Visual Studio\LukeText For Desktop\LukeTextUWP Setup\AppPackages</AppxPackageDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <AppxBundle>Always</AppxBundle>

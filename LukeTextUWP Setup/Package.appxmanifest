@@ -9,7 +9,7 @@
   <Identity
     Name="58786RealLukeJames.LukeTextUWP"
     Publisher="CN=Real-Luke-James"
-    Version="2.2.1.0" />
+    Version="2.3.0.0" />
 
   <Properties>
     <DisplayName>LukeTextUWP</DisplayName>
