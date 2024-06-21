@@ -4,6 +4,7 @@
     <ROW Property="AI_APP_FILE" Value="[#LukeTextForDesktop.exe]"/>
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
     <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_CORE_VERSION"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LICENSE.rtf" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
@@ -11,6 +12,7 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll" Value="..\LukeText For Desktop\bin\Release\net6.0-windows\publish"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LICENSE.rtf" Value="LICENSE.rtf"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json" Value="LukeText For Desktop.deps.json"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1" Value="LukeText For Desktop.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe" Value="LukeText For Desktop.exe"/>
@@ -110,9 +112,10 @@
     <ROW File="WinRT.Runtime.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="WINRTR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WinRT.Runtime.dll&gt;" SelfReg="false"/>
     <ROW File="Update.json" Component_="Update.json" FileName="UPDATE~1.JSO|Update.json" Attributes="0" SourcePath="C:\Users\LukeV\AppData\Local\LukeIT\LukeText\Update.json" SelfReg="false"/>
     <ROW File="Newtonsoft.Json.dll" Component_="LukeTextForDesktop_PrimaryOutput" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll&gt;" SelfReg="false"/>
-    <ROW File="LICENSE.rtf" Component_="LukeTextForDesktop_PrimaryOutput" FileName="LICENSE.rtf" Attributes="0" SourcePath="C:\Users\LukeV\Downloads\LICENSE.rtf" SelfReg="false"/>
+    <ROW File="LICENSE.rtf" Component_="LukeTextForDesktop_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_LICENSE.rtf]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LICENSE.rtf&gt;" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_LICENSE.rtf" Path="[|AI_PROPPATH_DIR_PERBUILD_LICENSE.rtf]\[|AI_PROPPATH_FILENAME_PERBUILD_LICENSE.rtf]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.deps.json" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.deps.json]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.deps.json]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.dll_1]" Type="2" Content="0"/>
     <ROW Name="AI_APPPATH_PERBUILD_LukeTextForDesktop.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_LukeTextForDesktop.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_LukeTextForDesktop.exe]" Type="2" Content="0"/>
@@ -384,5 +387,6 @@
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="Microsoft.Windows.SDK.NET.dll"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="WinRT.Runtime.dll"/>
     <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="Newtonsoft.Json.dll"/>
+    <ROW ProjectId="{b3e7667e-a10f-41b0-9715-769cfcf2a378}" ProjectName="LukeText For Desktop" OutputGroup="PublishOutput" OutputFile="LICENSE.rtf"/>
   </COMPONENT>
 </DOCUMENT>
