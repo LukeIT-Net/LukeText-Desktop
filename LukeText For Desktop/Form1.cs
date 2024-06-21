@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections;
 
+
+
+
 namespace LukeText_For_Desktop
 {
 	public partial class Form1 : Form
@@ -16,18 +19,7 @@ namespace LukeText_For_Desktop
 		public Form1(string filename)
 		{
 			InitializeComponent();
-			const string userRoot = "HKEY_CURRENT_USER";
-			const string key1 = "Software";
-			const string key2 = "LukeIT";
-			const string key3 = "LukeText";
-			const string subkey = "PrivacyPolicy";
-			const string fullKey = userRoot + "\\" + key1 + "\\" + key2 + "\\" + key3;
-			string keyValue = (string)Registry.GetValue(fullKey, subkey, "NotAsked");
-			if (keyValue == "NotAsked")
-			{
-				MessageBox.Show("By using LukeText, You agree to the LukeIT Privacy Policy. Do you agree to the LukeIT Privacy Policy? To view the privacy policy, go to https://www.lukeit.net/PrivacyPolicy", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-				Registry.SetValue(fullKey, subkey, "Agreed", RegistryValueKind.String);
-			}
+			StartupClass.PrivacyPolicy();
 			if (filename != null)
 			{
 				RichTextBoxStreamType streamType;
@@ -70,18 +62,7 @@ namespace LukeText_For_Desktop
 		public Form1()
 		{
 			InitializeComponent();
-			const string userRoot = "HKEY_CURRENT_USER";
-			const string key1 = "Software";
-			const string key2 = "LukeIT";
-			const string key3 = "LukeText";
-			const string subkey = "PrivacyPolicy";
-			const string fullKey = userRoot + "\\" + key1 + "\\" + key2 + "\\" + key3;
-			string keyValue = (string)Registry.GetValue(fullKey, subkey, "NotAsked");
-			if (keyValue == "NotAsked")
-			{
-				MessageBox.Show("By using LukeText, You agree to the LukeIT Privacy Policy. Do you agree to the LukeIT Privacy Policy? To view the privacy policy, go to https://www.lukeit.net/PrivacyPolicy", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-				Registry.SetValue(fullKey, subkey, "Agreed", RegistryValueKind.String);
-			}
+			StartupClass.PrivacyPolicy();
 			string remoteUri = "http://api.lukeit.net/api/";
 			string remoteFile = "luketext.json", updateJsonFile = null;
 			string locationEnv = "%localappdata%/LukeIT/LukeText/Update.json";
