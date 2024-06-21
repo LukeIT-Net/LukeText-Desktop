@@ -25,10 +25,10 @@
     <ROW Property="ARPPRODUCTICON" Value="LukeTextForDesktop.exe" Type="8"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="LukeIT"/>
-    <ROW Property="ProductCode" Value="1033:{A8ADC51F-A10B-4AC9-85C2-861878BBD66E} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{ED119BC2-CCD5-46C9-B9F7-F7F20D5667FA} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="LukeText"/>
-    <ROW Property="ProductVersion" Value="2.2.1" Options="32"/>
+    <ROW Property="ProductVersion" Value="2.3.0" Options="32"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{0B096407-AC43-4EC4-A0C9-C12F0F74374A}"/>

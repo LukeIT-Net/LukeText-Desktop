@@ -44,7 +44,7 @@ namespace LukeText_For_Desktop
 			JToken token = JArray.Parse(json);
 			string version = (string)token.SelectToken("version");
 			string update = (string)token.SelectToken("update");
-			if (version == "2.2.1" && update == "true")
+			if (version == "2.3.0" && update == "true")
 			{
 				DialogResult result = MessageBox.Show("A New LukeText Update is Available! Do you want to download it?", "LukeText", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 				if (result == DialogResult.Yes)
