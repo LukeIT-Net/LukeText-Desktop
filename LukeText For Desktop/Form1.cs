@@ -8,6 +8,8 @@ using System.Security.Cryptography.X509Certificates;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections;
+using static System.Windows.Forms.LinkLabel;
+using System.Drawing.Printing;
 
 namespace LukeText_For_Desktop
 {

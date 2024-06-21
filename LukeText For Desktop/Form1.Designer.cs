@@ -1,4 +1,6 @@
 ﻿
+using System.Runtime.CompilerServices;
+
 namespace LukeText_For_Desktop
 {
 	partial class Form1
@@ -215,6 +217,9 @@ namespace LukeText_For_Desktop
 			saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			saveToolStripMenuItem.Text = "&Save";
 			saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
+			// 
+			// printToolStripMenuItem
+			// 
 			// 
 			// toolStripSeparator1
 			// 
@@ -467,6 +472,9 @@ namespace LukeText_For_Desktop
 			saveToolStripButton.Size = new System.Drawing.Size(23, 22);
 			saveToolStripButton.Text = "&Save";
 			saveToolStripButton.Click += saveToolStripButton_Click;
+			// 
+			// printToolStripButton
+			// 
 			// 
 			// toolStripSeparator6
 			// 
@@ -1111,6 +1119,12 @@ namespace LukeText_For_Desktop
 			richTextBox1.TabIndex = 2;
 			richTextBox1.Text = "";
 			// 
+			// printDocument1
+			// 
+			// 
+			// printDialog1
+			// 
+			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1259,6 +1273,7 @@ namespace LukeText_For_Desktop
 		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem aboutLukeTextToolStripMenuItem1;
+
 	}
 }
 
