@@ -9,9 +9,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Collections;
 
-
-
-
 namespace LukeText_For_Desktop
 {
 	public partial class Form1 : Form

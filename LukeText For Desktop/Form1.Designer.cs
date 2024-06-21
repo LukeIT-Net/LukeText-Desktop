@@ -187,7 +187,7 @@ namespace LukeText_For_Desktop
 			newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			newToolStripMenuItem.Name = "newToolStripMenuItem";
 			newToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N;
-			newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			newToolStripMenuItem.Text = "&New";
 			newToolStripMenuItem.Click += newToolStripMenuItem_Click;
 			// 
@@ -197,14 +197,14 @@ namespace LukeText_For_Desktop
 			openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			openToolStripMenuItem.Name = "openToolStripMenuItem";
 			openToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O;
-			openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			openToolStripMenuItem.Text = "&Open";
 			openToolStripMenuItem.Click += openToolStripMenuItem_Click;
 			// 
 			// toolStripSeparator
 			// 
 			toolStripSeparator.Name = "toolStripSeparator";
-			toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+			toolStripSeparator.Size = new System.Drawing.Size(143, 6);
 			// 
 			// saveToolStripMenuItem
 			// 
@@ -212,19 +212,19 @@ namespace LukeText_For_Desktop
 			saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
 			saveToolStripMenuItem.Name = "saveToolStripMenuItem";
 			saveToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S;
-			saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			saveToolStripMenuItem.Text = "&Save";
 			saveToolStripMenuItem.Click += saveToolStripMenuItem_Click;
 			// 
 			// toolStripSeparator1
 			// 
 			toolStripSeparator1.Name = "toolStripSeparator1";
-			toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+			toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
 			// 
 			// exitToolStripMenuItem
 			// 
 			exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
 			exitToolStripMenuItem.Text = "E&xit";
 			exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
 			// 
@@ -417,14 +417,14 @@ namespace LukeText_For_Desktop
 			// checkForUpdatesToolStripMenuItem
 			// 
 			checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
-			checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+			checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
 			checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
 			checkForUpdatesToolStripMenuItem.Click += checkForUpdatesToolStripMenuItem_Click;
 			// 
 			// aboutLukeTextToolStripMenuItem1
 			// 
 			aboutLukeTextToolStripMenuItem1.Name = "aboutLukeTextToolStripMenuItem1";
-			aboutLukeTextToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			aboutLukeTextToolStripMenuItem1.Size = new System.Drawing.Size(173, 22);
 			aboutLukeTextToolStripMenuItem1.Text = "About LukeText";
 			aboutLukeTextToolStripMenuItem1.Click += aboutLukeTextToolStripMenuItem1_Click_1;
 			// 
@@ -1119,6 +1119,7 @@ namespace LukeText_For_Desktop
 			Controls.Add(richTextBox1);
 			Controls.Add(toolStrip1);
 			Controls.Add(menuStrip1);
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			MainMenuStrip = menuStrip1;
 			Name = "Form1";
 			Text = "LukeText";
